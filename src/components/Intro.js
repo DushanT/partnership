@@ -6,19 +6,14 @@ import { twMerge } from "tailwind-merge";
 export default function Header({ className, ...other }) {
   return (
     <section
-      className={twMerge("relative mb-[183px]", className)}
+      id="intro"
+      className={twMerge("relative h-[calc(100vh-2.5rem)]", className)}
       {...other}
-      data-aos="zoom-in"
     >
-      <Image
-        alt=""
-        src="/intro-bg.jpg"
-        width="1440"
-        height="719"
-        className="w-full"
-      />
+      <Image alt="" src="/intro-bg.jpg" fill style={{ objectFit: "cover" }} />
       <h1>
         <Image
+          id="logo"
           alt="Partnership logo"
           src="/logo.svg"
           width="143"
