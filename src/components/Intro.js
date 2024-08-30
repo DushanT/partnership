@@ -5,7 +5,11 @@ import { twMerge } from "tailwind-merge";
 
 export default function Header({ className, ...other }) {
   return (
-    <section className={twMerge("relative mb-[183px]", className)} {...other}>
+    <section
+      className={twMerge("relative mb-[183px]", className)}
+      {...other}
+      data-aos="zoom-in"
+    >
       <Image
         alt=""
         src="/intro-bg.jpg"
