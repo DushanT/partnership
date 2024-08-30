@@ -1,0 +1,33 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    font-family: var(--font-montserrat); /*, system-ui, sans-serif;*/
+  }
+}
+
+/* :root {
+  --foreground-color: #000000;
+  --background-color: #fff;
+} */
+
+/* Forced dark mode */
+/* @media (prefers-color-scheme: dark) { */
+:root {
+  --foreground-rgb: #fff;
+  --background-rgb: #000;
+  --max-width: 1440px;
+  --header-max-width: 1380px;
+}
+/* } */
+
+html {
+  width: 100vw;
+}
+
+body {
+  color: var(--foreground-rgb);
+  background: var(--background-rgb);
+}
