@@ -1,6 +1,5 @@
 "use client";
 
-import Image from "next/image";
 import { twMerge } from "tailwind-merge";
 import HeaderLink from "./HeaderLink";
 
@@ -13,19 +12,15 @@ export default function Header({ className, ...other }) {
   }
   return (
     <header
-      className={twMerge(" flex items-center justify-between ", className)}
+      className={twMerge("flex items-center justify-between", className)}
       {...other}
     >
-      <button onClick={handleClick}>
-        <div className="logo" />
+      <button onClick={handleClick} className="text-h4 text-bold font-heading">
+        PARTNERSHIP®
       </button>
-      <nav className="flex gap-7 lowercase">
-        <HeaderLink href="#about" className="hidden md:flex">
-          About us
-        </HeaderLink>
-        <HeaderLink href="#about" className="hidden md:flex">
-          Reach out
-        </HeaderLink>
+      <nav className="flex gap-10">
+        <HeaderLink href="#about-us">About us</HeaderLink>
+        <HeaderLink href="#reach-out">Reach out</HeaderLink>
       </nav>
     </header>
   );

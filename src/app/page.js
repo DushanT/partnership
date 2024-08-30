@@ -5,6 +5,8 @@ import AOS from "aos";
 import "aos/dist/aos.css";
 
 import Intro from "@/components/Intro";
+import AboutUs from "@/components/AboutUs";
+import ReachOut from "@/components/ReachOut";
 
 export default function Home() {
   useEffect(() => {
@@ -13,8 +15,8 @@ export default function Home() {
   return (
     <>
       <Intro />
-      {/* <AboutUs /> */}
-      {/* <ReachOut /> */}
+      <AboutUs />
+      <ReachOut />
     </>
   );
 }
